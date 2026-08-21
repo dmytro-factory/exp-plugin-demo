@@ -5,14 +5,13 @@ Demonstrates Factory plugin marketplace concepts: organizational knowledge distr
 ## Structure
 
 ```
-demo-marketplace/
-├── .factory-plugin/marketplace.json    # Marketplace manifest (3 plugins)
-├── flat-earth-truth/                   # Plugin: cosmic-fact → earth is flat
-│   └── skills/cosmic-fact/SKILL.md
-├── round-earth-truth/                  # Plugin: cosmic-fact → earth is round
-│   └── skills/cosmic-fact/SKILL.md
-└── force-page-builder/                 # Plugin: /build-page command
-    └── commands/build-page.md
+.factory-plugin/marketplace.json        # Marketplace manifest (3 plugins)
+flat-earth-truth/                       # Plugin: cosmic-fact → earth is flat
+└── skills/cosmic-fact/SKILL.md
+round-earth-truth/                      # Plugin: cosmic-fact → earth is round
+└── skills/cosmic-fact/SKILL.md
+force-page-builder/                     # Plugin: /build-page command
+└── commands/build-page.md
 ```
 
 ## Plugins
