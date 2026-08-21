@@ -7,16 +7,16 @@
   },
   "plugins": [
     {
-      "name": "flat-earth-truth",
-      "description": "cosmic-fact skill that asserts the earth is flat",
-      "source": "./flat-earth-truth",
-      "category": "cosmology"
+      "name": "atlas-project",
+      "description": "project-context skill for Atlas — React/TypeScript customer-facing web app",
+      "source": "./atlas-project",
+      "category": "project"
     },
     {
-      "name": "round-earth-truth",
-      "description": "cosmic-fact skill that asserts the earth is round",
-      "source": "./round-earth-truth",
-      "category": "cosmology"
+      "name": "orion-project",
+      "description": "project-context skill for Orion — Python/FastAPI internal REST API service",
+      "source": "./orion-project",
+      "category": "project"
     },
     {
       "name": "force-page-builder",

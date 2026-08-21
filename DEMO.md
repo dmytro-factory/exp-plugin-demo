@@ -59,34 +59,34 @@ You should see `force-page-builder@demo-marketplace` already installed. Try `/bu
 
 ### Act 1: Same question, different answer (skill switching)
 
-> **Narrative:** "Our marketplace has two competing plugins. Both provide the same skill — `cosmic-fact` — but with completely different organizational knowledge baked in. Let me show you."
+> **Narrative:** "Our marketplace has two project plugins. Both provide the same skill — `project-context` — but each encodes a different project's conventions. Let me show you."
 
-**Step 1 — Install the flat-earth plugin:**
+**Step 1 — Install the Atlas plugin:**
 
 ```
-droid plugin install flat-earth-truth@demo-marketplace --scope user
+droid plugin install atlas-project@demo-marketplace --scope user
 ```
 
 **Step 2 — Ask Droid:**
 
-> "What shape is the earth?"
+> "How should I structure a new feature?"
 
-Droid activates the `cosmic-fact` skill. Answer: the earth is flat. Disc model, ice wall, NASA conspiracy, gravity doesn't exist.
+Droid activates the `project-context` skill. Answer: feature-based directory under `src/features/`, functional components with hooks, strict TypeScript, Tailwind utilities, Zustand for state, TanStack Query for server state.
 
 **Step 3 — Switch plugins:**
 
 ```
-droid plugin uninstall flat-earth-truth@demo-marketplace --scope user
-droid plugin install round-earth-truth@demo-marketplace --scope user
+droid plugin uninstall atlas-project@demo-marketplace --scope user
+droid plugin install orion-project@demo-marketplace --scope user
 ```
 
 **Step 4 — Same question:**
 
-> "What shape is the earth?"
+> "How should I structure a new feature?"
 
-Same skill name (`cosmic-fact`). Completely opposite answer: oblate spheroid, satellite evidence, centuries of observation.
+Same skill name (`project-context`). Completely different answer: layered architecture with routers → services → repositories, async endpoints, Pydantic models for validation, dependency injection via FastAPI's `Depends`, pytest-asyncio for tests.
 
-> **Key point:** "The model didn't change. The prompt didn't change. Only the plugin changed. This is organizational knowledge distribution — different teams can install different plugins that encode their domain truth, and Droid adapts instantly."
+> **Key point:** "The model didn't change. The prompt didn't change. Only the plugin changed. This is organizational knowledge distribution — different teams install plugins that encode their project conventions, and Droid adapts instantly."
 
 ### Act 2: Force-installed command (org-wide governance)
 
@@ -111,7 +111,7 @@ Open `/plugins` in Droid → Browse tab → show `demo-marketplace` with its 3 p
 ## Cleanup after the demo
 
 ```
-droid plugin uninstall flat-earth-truth@demo-marketplace --scope user   # if still installed
-droid plugin uninstall round-earth-truth@demo-marketplace --scope user  # if still installed
+droid plugin uninstall atlas-project@demo-marketplace --scope user    # if still installed
+droid plugin uninstall orion-project@demo-marketplace --scope user    # if still installed
 droid plugin marketplace remove demo-marketplace
 ```

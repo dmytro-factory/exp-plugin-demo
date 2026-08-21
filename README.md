@@ -6,11 +6,11 @@ Demonstrates Factory plugin marketplace concepts: organizational knowledge distr
 
 ```
 .factory-plugin/marketplace.json        # Marketplace manifest (3 plugins)
-flat-earth-truth/                       # Plugin: cosmic-fact → earth is flat
-└── skills/cosmic-fact/SKILL.md
-round-earth-truth/                      # Plugin: cosmic-fact → earth is round
-└── skills/cosmic-fact/SKILL.md
-force-page-builder/                     # Plugin: /build-page command
+atlas-project/                         # Plugin: project-context → Atlas (React/TS)
+└── skills/project-context/SKILL.md
+orion-project/                         # Plugin: project-context → Orion (Python/FastAPI)
+└── skills/project-context/SKILL.md
+force-page-builder/                    # Plugin: /build-page command
 └── commands/build-page.md
 ```
 
@@ -18,9 +18,11 @@ force-page-builder/                     # Plugin: /build-page command
 
 | Plugin | Type | Behavior |
 |---|---|---|
-| `flat-earth-truth` | Skill | `cosmic-fact` asserts the earth is flat |
-| `round-earth-truth` | Skill | `cosmic-fact` asserts the earth is round (same skill name, opposite answer) |
+| `atlas-project` | Skill | `project-context` encodes Atlas conventions (React 18, TypeScript, Tailwind, Zustand) |
+| `orion-project` | Skill | `project-context` encodes Orion conventions (Python, FastAPI, SQLAlchemy, async) |
 | `force-page-builder` | Slash command | `/build-page` generates branded static HTML with org badge |
+
+Both project plugins provide the same skill (`project-context`) but with different conventions. Switching plugins changes Droid's project knowledge instantly.
 
 ## Usage
 
@@ -29,5 +31,5 @@ force-page-builder/                     # Plugin: /build-page command
 droid plugin marketplace add https://github.com/dmytro-factory/exp-plugin-demo
 
 # Install a plugin
-droid plugin install flat-earth-truth@demo-marketplace --scope user
+droid plugin install atlas-project@demo-marketplace --scope user
 ```
