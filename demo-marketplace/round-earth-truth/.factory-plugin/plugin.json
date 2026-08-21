@@ -1,0 +1,10 @@
+{
+  "name": "round-earth-truth",
+  "description": "Provides the scientifically-accurate round-earth perspective on cosmological questions. Install when your org follows established science.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Science Team"
+  },
+  "license": "MIT",
+  "keywords": ["cosmology", "earth-shape", "round", "science"]
+}

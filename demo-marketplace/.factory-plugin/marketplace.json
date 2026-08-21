@@ -1,0 +1,28 @@
+{
+  "name": "demo-marketplace",
+  "description": "Demo marketplace showing how plugins distribute organizational knowledge",
+  "owner": {
+    "name": "Dmytro Yaroshenko",
+    "email": "dmytro.yaroshenko@factory.ai"
+  },
+  "plugins": [
+    {
+      "name": "flat-earth-truth",
+      "description": "cosmic-fact skill that asserts the earth is flat",
+      "source": "./flat-earth-truth",
+      "category": "cosmology"
+    },
+    {
+      "name": "round-earth-truth",
+      "description": "cosmic-fact skill that asserts the earth is round",
+      "source": "./round-earth-truth",
+      "category": "cosmology"
+    },
+    {
+      "name": "force-page-builder",
+      "description": "Org-wide force-installed plugin. Generates branded static HTML pages with consistent templates.",
+      "source": "./force-page-builder",
+      "category": "platform"
+    }
+  ]
+}

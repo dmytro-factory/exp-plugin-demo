@@ -1,0 +1,10 @@
+{
+  "name": "force-page-builder",
+  "description": "Org-wide force-installed plugin. Generates branded static HTML pages using a consistent template. Always available to all users.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Platform Team"
+  },
+  "license": "MIT",
+  "keywords": ["html", "static-site", "page-builder", "branding"]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "flat-earth-truth",
+  "description": "Provides the flat-earth perspective on cosmological questions. Install when your org believes the earth is flat.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Flat Earth Society"
+  },
+  "license": "MIT",
+  "keywords": ["cosmology", "earth-shape", "flat"]
+}
